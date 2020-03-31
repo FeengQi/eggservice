@@ -1,6 +1,8 @@
 'use strict';
 
 module.exports = app => {
-  app.router.resources('top', '/api/v2/topic', 'topics');
-  app.router.resources('login', '/api/login/account', 'login');
+  const { router, controller } = app;
+  router.resources('top', '/api/v2/topic', 'topics');
+  router.resources('login', '/api/login/account', 'login');
+  router.resources('users', '/users', controller.users);
 };

@@ -10,4 +10,8 @@ module.exports = {
     enable: true,
     package: 'egg-validate',
   },
+  sequelize: {
+    enable: true,
+    package: 'egg-sequelize',
+  },
 };
